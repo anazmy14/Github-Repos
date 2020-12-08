@@ -1,7 +1,5 @@
 import React, {useState,useEffect} from 'react'
-import { Form } from 'react-bootstrap'
 import { Card, Image, Row , Col, Button } from 'react-bootstrap'
-import Tags from './Tags'
 import '../repo.css'
 
 function Repo({ id, name, language, description, owner, html_url }) {

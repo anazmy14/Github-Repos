@@ -29,7 +29,7 @@ function RepoList () {
     }
 
     function deleteLanguage(language) {
-        const newLanguages = selectedLanguages.filter( l => l != language) 
+        const newLanguages = selectedLanguages.filter( l => l !== language) 
         setSelectedLanguages(newLanguages)
     } 
 

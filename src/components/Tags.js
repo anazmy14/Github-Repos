@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     listStyle: 'none',
     padding: theme.spacing(0.5),
-    margin: 0,
     backgroundColor: 'transparent',
     border : 'none',
     boxShadow : 'none',
