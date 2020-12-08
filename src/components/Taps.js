@@ -37,7 +37,7 @@ export default function CenteredTabs({setFavoriteTap}) {
         centered
       >
         <Tab label="ALL" className = {classes.tap } />
-        <Tab label="Favorits" className = {classes.tap } />
+        <Tab label="Favorites" className = {classes.tap } />
       </Tabs>
     </Paper>
   );
