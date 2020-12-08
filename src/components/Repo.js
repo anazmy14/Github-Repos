@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import { Card, Image, Row , Col, Button } from 'react-bootstrap'
 import '../repo.css'
 
-function Repo({ id, name, language, description, owner, html_url }) {
+function Repo({ id, name, language, description, owner, html_url, addLanguage }) {
     const [star, setStar] = useState(0) 
 
     useEffect( () => setStar( Number(localStorage.getItem(id))) , [] )
@@ -25,12 +25,13 @@ function Repo({ id, name, language, description, owner, html_url }) {
                <Col>
                    <Card.Title className="repo-name"> {name} </Card.Title> 
                    <Card.Text> {description} </Card.Text>
+                   <Button value={language} onClick={addLanguage} className= "mx-3 my-3 btn btn-success" > {language}  </Button>  
+                   <br></br>
                    <Button className="repo-btn" onClick = {toggleStar}> 
                        {star?   <i className="fas fa-star"> </i>
                        :  <i className="far fa-star"> </i> 
                        }
                    </Button>
-                   <p> {language} </p>
                </Col>
            </Row>
           </Card> 

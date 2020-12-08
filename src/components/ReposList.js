@@ -47,7 +47,7 @@ function RepoList () {
 
           {repos.map( repo => 
               !selectedLanguages.length ||  selectedLanguages.includes(repo.language)?  
-                !favoriteTap || isFavourite(repo.id) ? <Repo key={repo.id} {...repo} /> : null
+                !favoriteTap || isFavourite(repo.id) ? <Repo key={repo.id} {...repo}  addLanguage={addLanguage} /> : null
                : null             
           )}
         </div>   
