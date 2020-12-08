@@ -1,3 +1,8 @@
+## Github Repos 
+
+React.jsapplication for discovering
+trending repositories on GitHub.
+
 ## Requirements
 
 For development, you will only need Node.js installed on your environement.
