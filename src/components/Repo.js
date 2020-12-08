@@ -20,7 +20,7 @@ function Repo({ id, name, language, description, owner, html_url, addLanguage })
                <Col  md = {6} sm = {12} >
                  <Image className="card-img" src={owner.avatar_url} roundedCircle />
                  <br></br>
-                 <a href={html_url} ><i className="fab fa-github"></i> </a>
+                 <a href={html_url} target="_blank" ><i className="fab fa-github"></i> </a>
                </Col>
                <Col>
                    <Card.Title className="repo-name"> {name} </Card.Title> 
