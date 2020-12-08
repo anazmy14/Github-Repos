@@ -1,6 +1,6 @@
 ## Github Repos 
 
-React.jsapplication for discovering
+React.js application for discovering
 trending repositories on GitHub.
 
 ## Requirements
