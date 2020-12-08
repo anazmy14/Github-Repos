@@ -1,0 +1,37 @@
+.repo-card{
+    max-width: 800px;
+    margin: auto;
+}
+
+.repo-name  {
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: white  ;
+
+}
+.card-img{
+    height: 100px;
+    width: 100px !important;
+    
+  }
+  
+
+.fa-star{
+    color: #FFD700 ;
+}
+
+.fa-github{
+    font-size: 2rem;
+    color: white;
+    margin-top : 20px;
+}
+.repo-btn{
+    color: none;
+    background: none;
+    border: none;
+}
+
+.repo-btn:hover{
+    background: none;
+}
+
