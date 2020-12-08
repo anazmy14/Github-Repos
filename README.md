@@ -1,12 +1,18 @@
-Requirements
-For development, you will only need Node.js installed on your environement. 
+## Requirements
 
-Install
-$ cd PROJECT
-$ npm install
+For development, you will only need Node.js installed on your environement.
 
-Start & watch
-$ npm start
 
-Simple build for production
-$ npm run build
+## Install
+
+    $ git clone https://github.com/anazmy14/Github-Repos
+    $ cd PROJECT
+    $ npm install
+    
+## Start & watch
+
+    $ npm start
+
+## Simple build for production
+
+    $ npm run build    
