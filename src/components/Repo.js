@@ -25,7 +25,9 @@ function Repo({ id, name, language, description, owner, html_url, addLanguage })
                <Col>
                    <Card.Title className="repo-name"> {name} </Card.Title> 
                    <Card.Text> {description} </Card.Text>
-                   <Button value={language} onClick={addLanguage} className= "mx-3 my-3 btn btn-success" > {language}  </Button>  
+                   
+                   {language? <Button value={language} onClick={addLanguage} className= "mx-3 my-3 btn btn-success" > {language}  </Button>  
+                   : null }
                    <br></br>
                    <Button className="repo-btn" onClick = {toggleStar}> 
                        {star?   <i className="fas fa-star"> </i>

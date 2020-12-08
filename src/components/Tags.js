@@ -52,6 +52,7 @@ export default function ChipsArray({languages, deleteLanguage  }) {
           }
   
           return (
+            <>
             <li key={data.key}>
               <Chip 
                 icon={icon}
@@ -60,6 +61,9 @@ export default function ChipsArray({languages, deleteLanguage  }) {
                 className={classes.chip}
               />
             </li>
+
+            </>
+            
           );
         })}
       </Paper>
