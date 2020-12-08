@@ -8,7 +8,6 @@ import {Button} from 'react-bootstrap'
 async function getRepos( setRepos ){
     const url = 'https://api.github.com/search/repositories?q=created'
     const res = await axios.get(url)
-    console.log(res.data.items)
     setRepos( res.data.items )
 }   
 
@@ -34,23 +33,23 @@ function RepoList () {
     } 
 
     return(
+         
         <div className="container text-center my-3">
+            
           {
               languages.map( l => 
                  <Button value={l} onClick={addLanguage} key={l} className= "mx-3 my-3 btn btn-success" > {l}  </Button>  
               )
           }
-
-          <Tags languages= {selectedLanguages} deleteLanguage= {deleteLanguage} />
-       
+          <Tags languages= {selectedLanguages} deleteLanguage= {deleteLanguage} />      
 
           <Taps setFavoriteTap= {setFavoriteTap} />
-
           {repos.map( repo => 
               !selectedLanguages.length ||  selectedLanguages.includes(repo.language)?  
                 !favoriteTap || isFavourite(repo.id) ? <Repo key={repo.id} {...repo}  addLanguage={addLanguage} /> : null
                : null             
           )}
+      
         </div>   
     )
 }

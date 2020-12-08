@@ -41,6 +41,8 @@ export default function ChipsArray({languages, deleteLanguage  }) {
       setChipData((chips) => chips.filter((chip) => chip.key !== chipToDelete.key));
       deleteLanguage(chipToDelete.label)
     };
+
+    if (!languages.length) return null
   
     return (
       <Paper component="ul" className={classes.root}>
